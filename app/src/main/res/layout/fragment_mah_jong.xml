@@ -1,0 +1,123 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.happyorange.boardgame.boardgame.MahJong"
+    android:background="#229426"
+    android:clickable="true">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Current Amount"
+        android:id="@+id/textView2"
+        android:layout_gravity="left|top"
+        android:layout_marginTop="27dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned"
+        android:ems="10"
+        android:id="@+id/Point"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:text="0" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+1"
+        android:id="@+id/add1"
+        android:layout_alignTop="@+id/sub1"
+        android:layout_alignLeft="@+id/Point"
+        android:layout_alignStart="@+id/Point" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-1"
+        android:id="@+id/sub1"
+        android:layout_marginTop="60dp"
+        android:layout_below="@+id/Point"
+        android:layout_alignRight="@+id/Point"
+        android:layout_alignEnd="@+id/Point" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+10"
+        android:id="@+id/add10"
+        android:layout_alignLeft="@+id/add1"
+        android:layout_alignStart="@+id/add1"
+        android:layout_below="@+id/add1" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+100"
+        android:id="@+id/add100"
+        android:layout_below="@+id/add50"
+        android:layout_alignLeft="@+id/add50"
+        android:layout_alignStart="@+id/add10" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+500"
+        android:id="@+id/add500"
+        android:layout_below="@+id/add100"
+        android:layout_alignLeft="@+id/add100"
+        android:layout_alignStart="@+id/add100" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+50"
+        android:id="@+id/add50"
+        android:layout_below="@+id/sub10"
+        android:layout_alignLeft="@+id/add1"
+        android:layout_alignStart="@+id/add1" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-10"
+        android:id="@+id/sub10"
+        android:layout_below="@+id/sub1"
+        android:layout_alignLeft="@+id/sub1"
+        android:layout_alignStart="@+id/sub1" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-50"
+        android:id="@+id/sub50"
+        android:layout_alignLeft="@+id/sub10"
+        android:layout_alignStart="@+id/sub10"
+        android:layout_below="@+id/sub10" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-100"
+        android:id="@+id/sub100"
+        android:layout_alignTop="@+id/add100"
+        android:layout_alignLeft="@+id/sub50"
+        android:layout_alignStart="@+id/sub50" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-500"
+        android:id="@+id/sub500"
+        android:layout_below="@+id/sub100"
+        android:layout_alignLeft="@+id/sub100"
+        android:layout_alignStart="@+id/sub100" />
+
+</RelativeLayout>

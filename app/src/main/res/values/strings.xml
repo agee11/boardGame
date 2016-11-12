@@ -1,0 +1,489 @@
+<resources>
+    <string name="app_name">BoardGame</string>
+    <string name="MJ">Mah Jong</string>
+    <string name="character_prompt">Select a Character</string>
+    <string-array name="betrayal_Characters">
+        <item>Ox Bellows</item>
+        <item>Father Rhinehardt</item>
+        <item>Vivian Lopez</item>
+        <item>Peter Akimoto</item>
+        <item>Missy Dubourde</item>
+        <item>Jenny Le Clerc</item>
+        <item>Darrin "Flash" Williams</item>
+        <item>Professor Longfellow</item>
+        <item>Madame Zostra</item>
+        <item>Brandon Jaspers</item>
+        <item>Zoe Ingstrom</item>
+        <item>Heather Granville</item>
+    </string-array>
+    <string-array name="darrin">
+        <item>4</item>
+        <item>4</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>7</item>
+        <item>8</item>
+        <item>2</item>
+        <item>3</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>6</item>
+        <item>7</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+        <item>7</item>
+        <item>2</item>
+        <item>3</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+        <item>7</item>
+        <item>Age: 20</item>
+        <item>Height: 5\'11"</item>
+        <item>Weight: 188 lbs.</item>
+        <item>Birthday: June 6th</item>
+        <item>Hobbies: Track, Music, Shakespearean Literature</item>
+    </string-array>
+    <string-array name="longfellow">
+        <item>2</item>
+        <item>2</item>
+        <item>4</item>
+        <item>4</item>
+        <item>5</item>
+        <item>5</item>
+        <item>6</item>
+        <item>6</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>5</item>
+        <item>6</item>
+        <item>6</item>
+        <item>1</item>
+        <item>3</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>4</item>
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>Age: 57</item>
+        <item>Height: 5\'11"</item>
+        <item>Weight: 153 lbs.</item>
+        <item>Birthday: July 27th</item>
+        <item>Hobbies: Gaelic Music, Drama, Fine Wines</item>
+    </string-array>
+    <string-array name="zostra">
+        <item>2</item>
+        <item>3</item>
+        <item>3</item>
+        <item>5</item>
+        <item>5</item>
+        <item>6</item>
+        <item>6</item>
+        <item>7</item>
+        <item>2</item>
+        <item>3</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+        <item>6</item>
+        <item>4</item>
+        <item>4</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>8</item>
+        <item>1</item>
+        <item>3</item>
+        <item>4</item>
+        <item>4</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>6</item>
+        <item>Age: 37</item>
+        <item>Height: 5\'0"</item>
+        <item>Weight: 150 lbs.</item>
+        <item>Birthday: December 10th</item>
+        <item>Hobbies: Astrology, Cooking, Baseball</item>
+    </string-array>
+    <string-array name="jaspers">
+        <item>3</item>
+        <item>4</item>
+        <item>4</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>2</item>
+        <item>3</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>6</item>
+        <item>7</item>
+        <item>3</item>
+        <item>3</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>1</item>
+        <item>3</item>
+        <item>3</item>
+        <item>5</item>
+        <item>5</item>
+        <item>6</item>
+        <item>6</item>
+        <item>7</item>
+        <item>Age: 12</item>
+        <item>Height: 5\'1"</item>
+        <item>Weight: 109 lbs.</item>
+        <item>Birthday: May 21st</item>
+        <item>Hobbies: Computers, Camping, Hockey</item>
+    </string-array>
+    <string-array name="ingstrom">
+        <item>4</item>
+        <item>4</item>
+        <item>4</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>8</item>
+        <item>8</item>
+        <item>2</item>
+        <item>2</item>
+        <item>3</item>
+        <item>3</item>
+        <item>4</item>
+        <item>4</item>
+        <item>6</item>
+        <item>7</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>5</item>
+        <item>6</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>4</item>
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+        <item>Age: 8</item>
+        <item>Height: 3\'9"</item>
+        <item>Weight: 49 lbs.</item>
+        <item>Birthday: November 5th</item>
+        <item>Hobbies: Dolls, Music</item>
+    </string-array>
+    <string-array name="granville">
+        <item>3</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>3</item>
+        <item>3</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>3</item>
+        <item>3</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>6</item>
+        <item>6</item>
+        <item>2</item>
+        <item>3</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>Age: 18</item>
+        <item>Height: 5\'2"</item>
+        <item>Weight: 120 lbs.</item>
+        <item>Birthday: August 2nd</item>
+        <item>Hobbies: Television, Shopping</item>
+    </string-array>
+    <string-array name="bellows">
+        <item>2</item>
+        <item>2</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>5</item>
+        <item>6</item>
+        <item>4</item>
+        <item>5</item>
+        <item>5</item>
+        <item>6</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>8</item>
+        <item>2</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>2</item>
+        <item>2</item>
+        <item>3</item>
+        <item>3</item>
+        <item>5</item>
+        <item>5</item>
+        <item>6</item>
+        <item>6</item>
+        <item>Age: 23</item>
+        <item>Height: 6\'4"</item>
+        <item>Weight: 288 lbs.</item>
+        <item>Birthday: October 18th</item>
+        <item>Hobbies: Football, Shiny Objects</item>
+    </string-array>
+    <string-array name="rhinehardt">
+        <item>2</item>
+        <item>3</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>7</item>
+        <item>1</item>
+        <item>2</item>
+        <item>2</item>
+        <item>4</item>
+        <item>4</item>
+        <item>5</item>
+        <item>5</item>
+        <item>7</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>7</item>
+        <item>8</item>
+        <item>1</item>
+        <item>3</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>6</item>
+        <item>8</item>
+        <item>Age: 62</item>
+        <item>Height: 5\'9"</item>
+        <item>Weight: 185 lbs.</item>
+        <item>Birthday: April 29th</item>
+        <item>Hobbies: Fencing, Gardening</item>
+    </string-array>
+    <string-array name="lopez">
+        <item>3</item>
+        <item>4</item>
+        <item>4</item>
+        <item>4</item>
+        <item>4</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>2</item>
+        <item>2</item>
+        <item>2</item>
+        <item>4</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>6</item>
+        <item>4</item>
+        <item>4</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>8</item>
+        <item>4</item>
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+        <item>6</item>
+        <item>6</item>
+        <item>7</item>
+        <item>Age: 42</item>
+        <item>Height: 5\'5"</item>
+        <item>Weight: 142 lbs.</item>
+        <item>Birthday: January 11th</item>
+        <item>Hobbies: Old Movies, Horses</item>
+    </string-array>
+    <string-array name="akimoto">
+        <item>3</item>
+        <item>3</item>
+        <item>3</item>
+        <item>4</item>
+        <item>6</item>
+        <item>6</item>
+        <item>7</item>
+        <item>7</item>
+        <item>2</item>
+        <item>3</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>5</item>
+        <item>6</item>
+        <item>8</item>
+        <item>3</item>
+        <item>4</item>
+        <item>4</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>6</item>
+        <item>7</item>
+        <item>3</item>
+        <item>4</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>7</item>
+        <item>8</item>
+        <item>Age: 13</item>
+        <item>Height: 4\'11"</item>
+        <item>Weight: 98 lbs.</item>
+        <item>Birthday: September 3rd</item>
+        <item>Hobbies: Bugs Basketball</item>
+    </string-array>
+    <string-array name="dubourde">
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>6</item>
+        <item>6</item>
+        <item>7</item>
+        <item>7</item>
+        <item>2</item>
+        <item>3</item>
+        <item>3</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>6</item>
+        <item>6</item>
+        <item>Age: 9</item>
+        <item>Height: 4\'2"</item>
+        <item>Weight: 62 lbs.</item>
+        <item>Birthday: February 14th</item>
+        <item>Hobbies: Swimming, Medicine</item>
+    </string-array>
+    <string-array name="leclerc">
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>4</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>8</item>
+        <item>3</item>
+        <item>4</item>
+        <item>4</item>
+        <item>4</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>8</item>
+        <item>1</item>
+        <item>1</item>
+        <item>2</item>
+        <item>4</item>
+        <item>4</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>2</item>
+        <item>3</item>
+        <item>3</item>
+        <item>4</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>8</item>
+        <item>Age: 21</item>
+        <item>Height: 5\'7"</item>
+        <item>Weight: 142 lbs.</item>
+        <item>Birthday: March 4th</item>
+        <item>Hobbies: Reading, Soccer</item>
+    </string-array>
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
