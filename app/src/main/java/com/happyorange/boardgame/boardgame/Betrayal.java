@@ -1,8 +1,10 @@
 package com.happyorange.boardgame.boardgame;
 
+import android.app.Activity;
 import android.net.Uri;
 import android.os.Bundle;
 import android.app.Fragment;
+import android.support.v4.content.ContextCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -161,17 +163,50 @@ public class Betrayal extends Fragment {
 
     private void setCharacterStats(int character){
         String[] stats = getResources().getStringArray(character);
-        TextView mightStats, speedStats, sanityStats, knowledgeStats;
+        int mightStart, speedStart, sanityStart, knowledgeStart;
+        TextView statValues;
+        mightStart = might.getProgress();
+        speedStart = speed.getProgress();
+        sanityStart = sanity.getProgress();
+        knowledgeStart = knowledge.getProgress();
+        //Set text for character stats
         for(int i = 0; i < 8; i++){
-            speedStats = (TextView) getView().findViewWithTag("Speed" + (i + 1));
-            speedStats.setText(stats[i]);
-            mightStats = (TextView) getView().findViewWithTag("Might" + (i + 1));
-            mightStats.setText(stats[i+8]);
-            sanityStats = (TextView) getView().findViewWithTag("Sanity" + (i + 1));
-            sanityStats.setText(stats[i+16]);
-            knowledgeStats = (TextView) getView().findViewWithTag("Knowledge" + (i + 1));
-            knowledgeStats.setText(stats[i+24]);
+            //Speed
+            statValues = (TextView) getView().findViewWithTag("Speed" + (i + 1));
+            statValues.setText(stats[i]);
+            if(speedStart == i + 1){
+                statValues.setTextColor(ContextCompat.getColor(getActivity(), R.color.colorAccent));
+            }else {
+                statValues.setTextColor(ContextCompat.getColor(getActivity(), R.color.colorText));
+            }
+            //Might
+            statValues = (TextView) getView().findViewWithTag("Might" + (i + 1));
+            statValues.setText(stats[i+8]);
+            if(mightStart == i + 1){
+                statValues.setTextColor(ContextCompat.getColor(getActivity(), R.color.colorAccent));
+            }else {
+                statValues.setTextColor(ContextCompat.getColor(getActivity(), R.color.colorText));
+            }
+            //Sanity
+            statValues = (TextView) getView().findViewWithTag("Sanity" + (i + 1));
+            statValues.setText(stats[i+16]);
+            if(sanityStart == i + 1){
+                statValues.setTextColor(ContextCompat.getColor(getActivity(), R.color.colorAccent));
+            }else {
+                statValues.setTextColor(ContextCompat.getColor(getActivity(), R.color.colorText));
+            }
+            //Knowledge
+            statValues = (TextView) getView().findViewWithTag("Knowledge" + (i + 1));
+            statValues.setText(stats[i+24]);
+            if(knowledgeStart == i + 1){
+                statValues.setTextColor(ContextCompat.getColor(getActivity(), R.color.colorAccent));
+            }else {
+                statValues.setTextColor(ContextCompat.getColor(getActivity(), R.color.colorText));
+            }
         }
+
+        speed.getProgress();
+        //Set text for character traits
         TextView detailText = (TextView) getView().findViewById(R.id.Age);
         detailText.setText(stats[32]);
         detailText = (TextView) getView().findViewById(R.id.Height);
@@ -182,18 +217,6 @@ public class Betrayal extends Fragment {
         detailText.setText(stats[35]);
         detailText = (TextView) getView().findViewById(R.id.Hobbies);
         detailText.setText(stats[36]);
-
-        System.out.println("TEST TEST TEST TEST ID TEST TEST TEST");
-        System.out.println("Might" + (0 + 1));
-        System.out.println(R.id.Might1);
-        System.out.println(R.id.Might2);
-        System.out.println(R.id.Might3);
-        System.out.println(R.id.Might4);
-        System.out.println(R.id.Might5);
-        System.out.println(R.id.Might6);
-        System.out.println(R.id.Might7);
-        System.out.println(R.id.Might8);
-
     }
 
     @Override
