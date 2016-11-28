@@ -1,14 +1,79 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.happyorange.boardgame.boardgame.Wizard"
-    android:clickable="true">
+    android:clickable="true"
+    android:background="#ffffff"
+    android:padding="10dp"
+    android:id="@+id/wizardSetup">
 
     <!-- TODO: Update blank fragment layout -->
+
     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="How many Players?"
+        android:id="@+id/textView3"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:layout_alignLeft="@+id/textView3"
+        android:id="@+id/radioGroup">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:id="@+id/radioButton"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4"
+            android:id="@+id/radioButton2"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5"
+            android:id="@+id/radioButton3"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6"
+            android:id="@+id/radioButton4"
+            android:checked="false" />
+    </RadioGroup>
+
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:id="@+id/NamePrompt"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/radioGroup" >
 
-</FrameLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignLeft="@+id/radioGroup"
+            android:layout_alignStart="@+id/radioGroup"
+            android:layout_below="@+id/radioGroup"
+            android:id="@+id/PlayerNames">
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

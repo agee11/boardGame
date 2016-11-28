@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
                 FragmentTransaction transaction = getFragmentManager().beginTransaction();
                 Fragment deuce = new Deuce();
 
-                transaction.add(R.id.scoreboard, deuce, "deuce");
+                transaction.add(R.id.scoreboard, new Deuce(), "deuce");
                 transaction.addToBackStack(null);
                 transaction.commit();
             }
